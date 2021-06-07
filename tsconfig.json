@@ -3,7 +3,6 @@
         "module": "CommonJS",
         "target": "es2015",
         "strict": false,
-        "watch": true,
         "lib": ["ESNext"],
         "outDir": "dist",
         "sourceMap": true,
