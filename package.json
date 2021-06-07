@@ -4,7 +4,8 @@
 	"description": "An FCC Backend Challenge",
 	"main": "dist/server.js",
 	"scripts": {
-		"start": "node dist/server.js",
+		"start": "yarn build && node dist/server.js",
+		"build": "tsc",
 		"dev": "nodemon dist/server.js",
 		"lint": "eslint dist/server.js"
 	},
