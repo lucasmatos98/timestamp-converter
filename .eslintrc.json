@@ -1,0 +1,44 @@
+{
+    "extends": "google",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "ignore",
+          "named": "never",
+          "asyncArrow": "ignore"
+        }
+      ],
+      "indent": [
+        "error",
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "semi": 2,
+      "object-curly-spacing": "off",
+      "padded-blocks": "off",
+      "no-undef": "error",
+      "max-len": [
+        2,
+        {
+          "code": 200,
+          "tabWidth": 2,
+          "ignoreUrls": true
+        }
+      ]
+    }
+  }
+  
