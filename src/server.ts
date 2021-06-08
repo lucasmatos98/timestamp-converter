@@ -8,7 +8,7 @@ const app = express();
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
 import * as cors from 'cors';
-// import { AddressInfo } from 'net';
+import { AddressInfo } from 'net';
 app.use(cors({ optionsSuccessStatus: 200 })); // some legacy browsers choke on 204
 
 // http://expressjs.com/en/starter/static-files.html
@@ -63,8 +63,7 @@ app.get('/api/:dateString', (req, res) => {
 
 
 // listen for requests :)
-// const listener =
-app.listen(3000, function () {
-    // const { port } = listener.address() as AddressInfo;
-    console.log('Your app is listening on port ' + 3000);
+const listener = app.listen(3000, function () {
+    const { port } = listener.address() as AddressInfo;
+    console.log('Your app is listening on port ' + port);
 });
