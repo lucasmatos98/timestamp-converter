@@ -53,7 +53,7 @@ app.get('/api/:dateString', (req, res) => {
     res.json(data);
 });
 // listen for requests :)
-const listener = app.listen(3000, function () {
+const listener = app.listen(process.env.PORT, function () {
     const { port } = listener.address();
     console.log('Your app is listening on port ' + port);
 });
